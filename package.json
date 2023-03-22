@@ -1,0 +1,12 @@
+{
+  "name": "my_hello",
+  "version": "1.0.0",
+  "description": "Assignment Day 23",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
