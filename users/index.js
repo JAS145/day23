@@ -24,8 +24,11 @@ app.post("/users", function (req, res) {
   if (
     Object.entries(users).length == 2 &&
     "fullname" in req.body &&
+    typeof req.body.fullname == "string" &&
     "username" in req.body &&
-    "address" in req.body
+    typeof req.body.username == "string" &&
+    "address" in req.body &&
+    typeof req.body.address == "string"
   ) {
     users[id] = req.body;
     res.send(users);
